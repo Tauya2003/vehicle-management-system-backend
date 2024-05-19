@@ -1,0 +1,48 @@
+GET http://localhost:3001/vehicles
+
+###
+GET http://localhost:3000/subscribers/663be8744c0f12b59b789c0e
+
+
+###
+POST http://localhost:3001/vehicles
+Content-Type: application/json
+
+{
+  "make": "Dodge",
+  "model": "Ram",
+  "year": 2020,
+  "licensePlate": "MNO345",
+  "vin": "FEDCBA09876543210",
+  "availability": false,
+  "driverNationalID": "123ABC",
+  "driverLicense": "DEF-56789",
+  "employeeNumber": "99999",
+  "serviceStatus": "Needs Service",
+  "nextServiceDate": "2024-05-20",
+  "parked": false
+}
+
+
+
+
+
+
+
+###
+DELETE  http://localhost:3000/vehicles/663f69695b64894962598ce0
+
+
+
+
+###
+PATCH  http://localhost:3001/vehicles/664228c5d4227e5894ed3560
+Content-Type: application/json
+
+{
+   "availability": true,
+    "driverNationalID": "",
+    "driverLicense": "",
+    "employeeNumber": ""
+}
+
